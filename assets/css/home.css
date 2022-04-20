@@ -1,0 +1,635 @@
+/* HEADER */
+
+header#homeHeader {
+    background-image: url("../media/home/headerCircleBackground.svg");
+    background-size: 213.5%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 10vw;
+    margin-bottom: 140px;
+    position: relative;
+}
+
+header#homeHeader:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 200px;
+
+  background: #FFC400;
+  z-index: -1;
+}
+
+@media all and (max-width: 1024px) {
+  header#homeHeader {
+      margin-bottom: 80px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  header#homeHeader {
+      margin-bottom: 60px;
+  }
+}
+
+section#heroHomeSection {
+  margin: 0px auto;
+  width: max-content;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 60px;
+}
+
+@media all and (max-width: 1024px) {
+  section#heroHomeSection {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  section#heroHomeSection {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+}
+
+section#heroHomeSection a {
+  padding-top: 16px;
+  padding-bottom: 12px;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  margin-bottom: 10px;
+
+  background: #00BCC2;
+  color: white;
+  font-family: "Rimouski Bold", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+section#heroHomeSection a:hover {
+  background: #0CA4A9;
+}
+
+section#heroHomeSection a.mobile {
+  display: none;
+}
+
+@media all and (max-width: 600px) {
+  section#heroHomeSection a.desktop {
+    display: none;
+  }
+
+  section#heroHomeSection a.mobile {
+    display: block;
+    width: max-content;
+    margin: 0px auto;
+    margin-top: 30px;
+    font-size: 28px;
+  }
+}
+
+section#heroHomeSection p {
+  font-family: "DM Serif Display", serif;
+  font-weight: normal;
+  font-size: 47px;
+  line-height: 104%;
+  color: white;
+  margin-bottom: 30px;
+}
+
+@media all and (max-width: 1024px) {
+  section#heroHomeSection p {
+    font-size: 4vw;
+    line-height: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  section#heroHomeSection p {
+    font-size: 36px;
+    text-align: center;
+  }
+}
+
+section#heroHomeSection img {
+  width: 600px;
+}
+
+@media all and (max-width: 1024px) {
+  section#heroHomeSection img {
+    width: 44vw;
+  }
+}
+
+@media all and (max-width: 600px) {
+  section#heroHomeSection img {
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+  }
+}
+
+/* GENERAL MAIN */
+
+main#generalMain > section {
+  margin-bottom: 160px;
+}
+
+@media all and (max-width: 1024px) {
+  main#generalMain > section {
+    margin-bottom: 140px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  main#generalMain > section {
+    margin-bottom: 120px;
+  }
+}
+
+main#generalMain > section > header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media all and (max-width: 600px) {
+  main#generalMain > section > header {
+    margin-bottom: 40px;
+  }
+}
+
+main#generalMain > section > header h1 {
+  text-transform: uppercase;
+  font-family: "Rimouski Bold", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: #FFC400;
+  line-height: 80%;
+}
+
+@media all and (max-width: 600px) {
+  main#generalMain > section > header h1 {
+    font-size: 40px;
+  }
+}
+
+main#generalMain > section > header h2 {
+  font-family: "DM Serif Display Italic", serif;
+  font-style: italic;
+  font-size: 50px;
+}
+
+@media all and (max-width: 600px) {
+  main#generalMain > section > header h2 {
+    font-size: 30px;
+  }
+}
+
+/* VETERINARIO SECTION */
+
+section#veterinarioHomeSection article {
+  width: max-content;
+  margin: 0px auto;
+}
+
+@media all and (max-width: 600px) {
+  section#veterinarioHomeSection article {
+    width: 100%;
+  }
+}
+
+section#veterinarioHomeSection article#emergenciasArticle p {
+  font-size: 28px;
+  font-family: "VentiCF", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media all and (max-width: 1024px) {
+  section#veterinarioHomeSection article#emergenciasArticle p {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  section#veterinarioHomeSection article#emergenciasArticle p {
+    font-size: 18px;
+  }
+}
+
+section#veterinarioHomeSection article#emergenciasArticle p span:nth-of-type(1) {
+  display: inline-block;
+  vertical-align: middle;
+  height: 80px;
+}
+
+section#veterinarioHomeSection article#emergenciasArticle p img#porcentajeEmergenciasImg {
+  height: 90%;
+}
+
+section#veterinarioHomeSection article#emergenciasArticle p span:nth-of-type(2) {
+  font-size: 40px;
+  font-family: "DM Serif Display Italic", serif;
+  font-weight: italic;
+}
+
+section#veterinarioHomeSection article#emergenciasArticle p:nth-of-type(3) {
+  margin-top: 40px;
+}
+
+section#veterinarioHomeSection article#veterinarioArticle {
+  margin-top: 88px;
+  position: relative;
+}
+
+@media all and (max-width: 600px) {
+  section#veterinarioHomeSection article#veterinarioArticle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+section#veterinarioHomeSection article#veterinarioArticle:before {
+  content: "";
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 30px;
+  height: 34px;
+  position: absolute;
+  bottom: 100%;
+  left: 0px;
+  width: 100%;
+
+  background: url(../media/home/brillos.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+section#veterinarioHomeSection article#veterinarioArticle header {
+  height: 240px;
+  width: 240px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+@media all and (max-width: 600px) {
+  section#veterinarioHomeSection article#veterinarioArticle header {
+    height: 160px;
+    width: 160px;
+  }
+}
+
+section#veterinarioHomeSection article#veterinarioArticle header img {
+  height: 100%;
+  margin: 0px auto;
+}
+
+
+section#veterinarioHomeSection article#veterinarioArticle hgroup {
+  position: absolute;
+  top: 0px;
+  left: 110%;
+  bottom: 0px;
+  width: max-content;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+@media all and (max-width: 600px) {
+  section#veterinarioHomeSection article#veterinarioArticle hgroup {
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+  }
+}
+
+section#veterinarioHomeSection article#veterinarioArticle * {
+  font-family: "Chai", sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  text-align: left;
+}
+
+section#veterinarioHomeSection article#veterinarioArticle h1 {
+  color: #FFC400;
+}
+
+section#veterinarioHomeSection article#veterinarioArticle h2 {
+  color: #00BCC2;
+}
+
+/* BUSCAMOS SECTION */
+
+section#buscamosHomeSection article {
+  width: max-content;
+  margin: 0px auto;
+}
+
+section#buscamosHomeSection article ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+@media all and (max-width: 600px) {
+  section#buscamosHomeSection article ul {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+section#buscamosHomeSection li {
+  text-align: center;
+}
+
+section#buscamosHomeSection li picture {
+  position: relative;
+  display: block;
+  height: 60px;
+  width: 60px;
+
+  margin: 0px auto;
+  margin-bottom: 10px;
+}
+
+section#buscamosHomeSection li img {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  left: 0px;
+}
+
+section#buscamosHomeSection li h1{
+  font-family: "Rimouski Bold", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: #00BCC2;
+  margin-bottom: 12px;
+}
+
+section#buscamosHomeSection li p{
+  font-family: "VentiCF", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* SERVICIOS SECTION */
+
+section#serviciosHomeSection {
+  padding-bottom: 110px;
+
+  background-image: url("../media/home/serviciosBackground.svg");
+  background-size: auto 130%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+@media all and (max-width: 600px) {
+  section#serviciosHomeSection {
+    padding-bottom: 60px;
+    background-size: auto 110%;
+    background-position: bottom;
+  }
+}
+
+main#generalMain > section#serviciosHomeSection {
+  margin-bottom: 100px;
+}
+
+section#serviciosHomeSection > article {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media all and (max-width: 600px) {
+  section#serviciosHomeSection > article {
+    margin-top: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    padding: 0px 20px;
+  }
+}
+
+section#serviciosHomeSection article div.servicioDiv {
+  border: solid 6px #00BCC2;
+  border-radius: 100px;
+  padding: 30px;
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 600px) {
+  section#serviciosHomeSection article div.servicioDiv {
+    width: auto;
+    border-radius: 100px;
+  }
+}
+
+div.servicioDiv  header {
+  margin-bottom: 20px;
+}
+
+div.servicioDiv header h1 {
+  font-family: "Rimouski Bold", sans-serif;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+}
+
+div.servicioDiv ul {
+  margin-bottom: 20px;
+  list-style:none;
+}
+
+div.servicioDiv li {
+  font-family: "VentiCF", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 14px;
+
+  padding-left: 26px;
+  background-image: url("../media/home/check.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+@media all and (max-width: 600px) {
+  div.servicioDiv li {
+    font-size: 18px;
+  }
+}
+
+div.servicioDiv a {
+  display: block;
+  background: #00BCC2;
+  padding-top: 14px;
+  padding-bottom: 10px;
+
+  padding-left: 18px;
+  padding-right: 18px;
+
+  border-radius: 24px;
+  width: max-content;
+
+  margin: 0px auto;
+}
+
+div.servicioDiv a h1 {
+  font-family: "Rimouski Bold", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px auto;
+  color: white;
+}
+
+@media all and (max-width: 600px) {
+  div.servicioDiv a h1 {
+    font-size: 24px;
+  }
+}
+
+/* REVIEWS SECTION */
+
+@media all and (max-width: 1024px) {
+  section#reviewsHomeSection article {
+    padding: 0px 40px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  section#reviewsHomeSection article {
+    width: 100%;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+section#reviewsHomeSection ul {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+@media all and (max-width: 600px) {
+  section#reviewsHomeSection ul {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 20px;
+    gap: 30px;
+  }
+}
+
+section#reviewsHomeSection li {
+  width: 250px;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+}
+
+@media all and (max-width: 600px) {
+  section#reviewsHomeSection li {
+    width: calc(100vw - 120px);
+  }
+}
+
+section#reviewsHomeSection li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 109px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: #F0F0F0;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+section#reviewsHomeSection li header:before {
+  content: "";
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  height: 34px;
+  width: 100%;
+  transform: rotateY(180deg);
+
+  background: url(../media/home/brillos.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+section#reviewsHomeSection li header img{
+  display: block;
+  margin: 0px auto;
+  width: 130px;
+  height: 130px;
+  margin-bottom: 20px;
+
+  border-radius: 50%;
+  background: #888888;
+}
+
+section#reviewsHomeSection li p {
+  font-family: "VentiCF", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 140%;
+  margin-bottom: 50px;
+}
+
+@media all and (max-width: 600px) {
+  section#reviewsHomeSection li p {
+    width: calc(100vw - 120px - 60px);
+  }
+}
+
+section#reviewsHomeSection li footer {
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Rimouski Bold", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFC400;
+}

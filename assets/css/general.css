@@ -1,0 +1,393 @@
+/* FONTS */
+
+@font-face {
+  font-family: "Oduda";
+  font-weight: bold;
+  src: url(../resources/fonts/Oduda/Oduda-Bold.otf);
+}
+
+@font-face {
+  font-family: "DM Serif Display";
+  font-weight: normal;
+  src: url(../resources/fonts/DMSerifDisplay/DMSerifDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: "DM Serif Display Italic";
+  font-weight: italic;
+  src: url(../resources/fonts/DMSerifDisplay/DMSerifDisplay-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Rimouski Bold";
+  font-weight: bold;
+  src: url(../resources/fonts/Rimouski/Rimouski-Bold.ttf);
+}
+
+@font-face {
+  font-family: "VentiCF";
+  font-weight: bold;
+  src: url(../resources/fonts/VentiCF/VentiCF-DemiBold.otf);
+}
+
+@font-face {
+  font-family: "Chai";
+  font-weight: normal;
+  src: url(../resources/fonts/Chai/Chai-Regular.ttf);
+}
+
+/* GENERAL */
+
+* {
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-size: 0px;
+	color: black;
+	font-family: sans-serif;
+	font-weight: 400;
+}
+
+body {
+  max-width: 1366px;
+  margin: 0px auto;
+}
+
+body > * {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*@media all and (max-width: 600px) {
+  body {
+    max-width: 375px;
+  }
+
+  body > * {
+    max-width: 335px;
+  }
+}*/
+
+@media all and (max-width: 1024px) {
+  body {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* GENERAL NAV */
+
+nav#generalNav {
+  width: 100%;
+  padding: 0px 108px;
+
+  height: 154px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media all and (max-width: 1024px) {
+  nav#generalNav {
+    padding: 0px 44px;
+    height: 120px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  nav#generalNav {
+    padding: 0px 20px;
+    padding-top: 20px;
+    height: auto;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+nav#generalNav img#logoGeneralImg {
+  height: 44px;
+}
+
+@media all and (max-width: 1024px) {
+  nav#generalNav img#logoGeneralImg {
+    height: 36px;
+  }
+}
+
+nav#generalNav a#generalMenuAnchor {
+  display: none;
+}
+
+@media all and (max-width: 600px) {
+  nav#generalNav a#generalMenuAnchor {
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+  }
+}
+
+nav#generalNav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  overflow: visible;
+  transition: height 0.3s ease-in;
+}
+
+@media all and (max-width: 1024px) {
+  nav#generalNav ul {
+    gap: 20px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  nav#generalNav ul {
+    height: 0px;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  nav#generalNav ul.visible {
+    height: auto;
+  }
+
+  nav#generalNav ul.visible:after {
+    content: "";
+    display: block;
+    bottom: 1px;
+    height: 1px;
+
+    background: white;
+    opacity: 0.5;
+  }
+}
+
+nav#generalNav li {
+  overflow: visible;
+}
+
+nav#generalNav li a{
+  overflow: visible;
+  position: relative;
+  display: inline-block;
+}
+
+nav#generalNav li a p{
+  font-family: "Oduda", sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 17px;
+  color: black;
+  text-transform: uppercase;
+  overflow: visible;
+  position: relative;
+}
+
+@media all and (max-width: 1024px) {
+  nav#generalNav li a p {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  nav#generalNav li a p {
+    font-size: 18px;
+  }
+}
+
+nav#generalNav li a:hover:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 0px;
+  background-image: url("../media/general/navSonrisa.svg");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 17px;
+  width: 100%;
+}
+
+@media all and (max-width: 1024px) {
+  nav#generalNav li a:hover:after {
+    height: 14px;
+  }
+}
+
+nav#generalNav.light img#logoGeneralImg {
+  filter: brightness(0) invert(1);
+}
+
+nav#generalNav.light a#generalMenuAnchor img {
+  filter: brightness(0) invert(1);
+}
+
+nav#generalNav.light li a p{
+  color: white;
+}
+
+nav#generalNav.light li a:hover:after {
+  filter: brightness(0) invert(1);
+}
+
+/* GENERAL FOOTER */
+footer#generalFooter {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media all and (max-width: 1024px) {
+  footer#generalFooter {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  footer#generalFooter {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+footer#generalFooter:before {
+  display: block;
+  margin-left: -20px;
+  margin-right: -20px;
+  content: "";
+  height: 6px;
+  background: #00BCC2;
+  border-radius: 3px;
+
+  margin-bottom: 50px;
+}
+
+footer#generalFooter > header {
+  margin-bottom: 30px;
+}
+
+footer#generalFooter img#logoGeneralFooterImg {
+  filter: brightness(0);
+  height: 40px;
+}
+
+footer#generalFooter > section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+}
+
+footer#generalFooter nav#generalFooterNav li a{
+  font-family: "Oduda", sans-serif;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 15px;
+  color: black;
+  text-transform: uppercase;
+}
+
+footer#generalFooter nav#generalFooterNav li:nth-last-of-type(n+2) {
+  margin-bottom: 20px;
+}
+
+footer#generalFooter article#generalFooterSloganArticle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media all and (max-width: 600px) {
+  footer#generalFooter article#generalFooterSloganArticle {
+    display: none;
+  }
+}
+
+footer#generalFooter article#generalFooterSloganArticle img {
+  display: block;
+}
+
+@media all and (max-width: 1024px) {
+  footer#generalFooter article#generalFooterSloganArticle img {
+    width: 50%;
+  }
+}
+
+footer#generalFooter aside#generalFooterContactAside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+
+  width: 200px;
+}
+
+footer#generalFooter div#generalFooterTelefonoDiv a{
+  display: block;
+  width: 100%;
+
+  font-family: "VentiCF", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media all and (max-width: 600px) {
+  footer#generalFooter div#generalFooterTelefonoDiv a{
+    text-align: right;
+  }
+}
+
+footer#generalFooter div#generalFooterRedesSocialesDiv ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media all and (max-width: 600px) {
+  footer#generalFooter div#generalFooterRedesSocialesDiv ul{
+    justify-content: flex-end;
+  }
+}
+
+footer#generalFooter div#generalFooterRedesSocialesDiv li img{
+  width: 36px;
+  height: 36px;
+}
+
+footer#generalFooter section#generalCopyrightSection {
+  margin-top: 50px;
+}
+
+footer#generalFooter section#generalCopyrightSection p {
+  font-family: "VentiCF", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #909090;
+
+  margin: 0px auto;
+}

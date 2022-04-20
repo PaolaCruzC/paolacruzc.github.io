@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="24px" viewBox="0 0 40 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>menuIcon</title>
+    <g id="menuIcon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="topRectangle" fill="#000000" x="0" y="0" width="40" height="4.8" rx="2.4"></rect>
+        <rect id="middleRectangle" fill="#000000" x="0" y="9.6" width="40" height="4.8" rx="2.4"></rect>
+        <rect id="bottomRectangle" fill="#000000" x="0" y="19.2" width="40" height="4.8" rx="2.4"></rect>
+    </g>
+</svg>
