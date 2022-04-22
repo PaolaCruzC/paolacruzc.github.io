@@ -17,7 +17,7 @@ header#homeHeader:before {
   top: 0px;
   left: 0px;
   right: 0px;
-  height: 200px;
+  height: 400px;
 
   background: #FFC400;
   z-index: -1;
@@ -141,62 +141,6 @@ section#heroHomeSection img {
     width: 80%;
     display: block;
     margin: 0px auto;
-  }
-}
-
-/* GENERAL MAIN */
-
-main#generalMain > section {
-  margin-bottom: 160px;
-}
-
-@media all and (max-width: 1024px) {
-  main#generalMain > section {
-    margin-bottom: 140px;
-  }
-}
-
-@media all and (max-width: 600px) {
-  main#generalMain > section {
-    margin-bottom: 120px;
-  }
-}
-
-main#generalMain > section > header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-@media all and (max-width: 600px) {
-  main#generalMain > section > header {
-    margin-bottom: 40px;
-  }
-}
-
-main#generalMain > section > header h1 {
-  text-transform: uppercase;
-  font-family: "Rimouski Bold", sans-serif;
-  font-weight: bold;
-  font-size: 60px;
-  color: #FFC400;
-  line-height: 80%;
-}
-
-@media all and (max-width: 600px) {
-  main#generalMain > section > header h1 {
-    font-size: 40px;
-  }
-}
-
-main#generalMain > section > header h2 {
-  font-family: "DM Serif Display Italic", serif;
-  font-style: italic;
-  font-size: 50px;
-}
-
-@media all and (max-width: 600px) {
-  main#generalMain > section > header h2 {
-    font-size: 30px;
   }
 }
 
@@ -404,7 +348,7 @@ section#buscamosHomeSection li p{
 section#serviciosHomeSection {
   padding-bottom: 110px;
 
-  background-image: url("../media/home/serviciosBackground.svg");
+  background-image: url("../media/general/sonrisaFriendly.svg");
   background-size: auto 130%;
   background-position: top;
   background-repeat: no-repeat;

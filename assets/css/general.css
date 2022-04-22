@@ -226,20 +226,76 @@ nav#generalNav li a:hover:after {
   }
 }
 
-nav#generalNav.light img#logoGeneralImg {
+body.light nav#generalNav img#logoGeneralImg {
   filter: brightness(0) invert(1);
 }
 
-nav#generalNav.light a#generalMenuAnchor img {
+body.light nav#generalNav a#generalMenuAnchor img {
   filter: brightness(0) invert(1);
 }
 
-nav#generalNav.light li a p{
+body.light nav#generalNav li a p{
   color: white;
 }
 
-nav#generalNav.light li a:hover:after {
+body.light nav#generalNav li a:hover:after {
   filter: brightness(0) invert(1);
+}
+
+/* GENERAL MAIN */
+
+main#generalMain > section {
+  margin-bottom: 160px;
+}
+
+@media all and (max-width: 1024px) {
+  main#generalMain > section {
+    margin-bottom: 140px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  main#generalMain > section {
+    margin-bottom: 120px;
+  }
+}
+
+main#generalMain > section > header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media all and (max-width: 600px) {
+  main#generalMain > section > header {
+    margin-bottom: 40px;
+  }
+}
+
+main#generalMain > section > header h1 {
+  text-transform: uppercase;
+  font-family: "Rimouski Bold", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: #FFC400;
+  line-height: 80%;
+}
+
+@media all and (max-width: 600px) {
+  main#generalMain > section > header h1 {
+    font-size: 40px;
+  }
+}
+
+main#generalMain > section > header h2 {
+  font-family: "DM Serif Display Italic", serif;
+  font-style: italic;
+  font-size: 50px;
+}
+
+@media all and (max-width: 600px) {
+  main#generalMain > section > header h2 {
+    font-size: 30px;
+  }
 }
 
 /* GENERAL FOOTER */

@@ -1,32 +1,10 @@
-<!DOCTYPE html>
-<html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0'>
-    <link rel="stylesheet" href="assets/css/general.css">
-    <link rel="stylesheet" href="assets/css/home.css">
-    <script src="assets/js/general.js" charset="utf-8"></script>
-    <title>Friendly</title>
-  </head>
-  <body>
+---
+layout: default
+appearance: light
+---
+
     <header id="homeHeader">
-      <nav id="generalNav" class="light">
-        <a id="generalLogoAnchor" href="home.html">
-          <img id="logoGeneralImg" src="assets/media/general/logo.svg" alt="Friendly Logo">
-        </a>
-
-        <a id="generalMenuAnchor" href="javascript:toggleMenu();">
-          <img src="assets/media/general/menuIcon.svg" alt="">
-        </a>
-
-        <ul id="generalMenuUl">
-            <li><a href="#"><p>Inicio</p></a></li>
-            <li><a href="#"><p>Nosotros</p></a></li>
-            <li><a href="#"><p>Servicios</p></a></li>
-            <li><a href="#"><p>Contacto</p></a></li>
-        </ul>
-      </nav>
-
+      {%- include navigation.html -%}
       <section id="heroHomeSection">
         <aside>
           <p>Limpiamos<br>
@@ -209,48 +187,3 @@
         </article>
       </section>
     </main>
-
-    <footer id="generalFooter">
-      <header>
-        <a href="home.html">
-          <img id="logoGeneralFooterImg" src="assets/media/general/logo.svg" alt="Friendly Logo">
-        </a>
-      </header>
-
-      <section>
-        <nav id="generalFooterNav">
-          <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Nosotros</a></li>
-              <li><a href="#">Servicios</a></li>
-              <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-
-        <article id="generalFooterSloganArticle">
-          <img src="assets/media/general/footerSlogan.svg" alt="Limpiamos con el corazón">
-        </article>
-
-        <aside id="generalFooterContactAside">
-          <div id="generalFooterTelefonoDiv">
-            <a href="tel://+51985881334">985-881-334</a>
-          </div>
-          <div id="generalFooterRedesSocialesDiv">
-            <ul>
-              <li>
-                <a href="#"><img src="assets/media/general/facebookIcon.svg" alt="Icono de Facebook"></a>
-              </li>
-              <li>
-                <a href="#"><img src="assets/media/general/instagramIcon.svg" alt="Icono de Instagram"></a>
-              </li>
-            </ul>
-          </div>
-        </aside>
-      </section>
-
-      <section id="generalCopyrightSection">
-        <p>© Copyright 2022. Todos los derechos reservados. Friendly</p>
-      </section>
-    </footer>
-  </body>
-</html>

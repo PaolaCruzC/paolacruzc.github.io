@@ -1,0 +1,260 @@
+/* NOSOTROS HEADER */
+
+header#nosotrosHeader {
+  padding: 0px 40px;
+  margin-bottom: 50px;
+}
+
+@media all and (max-width:600px) {
+  header#nosotrosHeader {
+    padding: 0px 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+
+header#nosotrosHeader img{
+  max-width: 100%;
+  display: block;
+  margin: 0px auto;
+  width: 480px;
+  margin-bottom: 40px;
+}
+
+@media all and (max-width:600px) {
+  header#nosotrosHeader img {
+    width: auto;
+    margin-bottom: 30px;
+  }
+}
+
+/* INTRO SECTION */
+
+section#nosotrosIntroSection {
+  padding: 0px 20px;
+}
+
+section#nosotrosIntroSection img {
+  max-width: 100%;
+  display: block;
+  margin: 0px auto;
+  width: 620px;
+
+  margin-bottom: 50px;
+}
+
+@media all and (max-width:600px) {
+  section#nosotrosIntroSection img {
+    width: auto;
+    margin-bottom: 30px;
+  }
+}
+
+section#nosotrosIntroSection p{
+  margin: 0px auto;
+  font-family: "VentiCF", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 140%;
+  text-align: center;
+
+  width: 640px;
+}
+
+@media all and (max-width:1024px) {
+  section#nosotrosIntroSection p {
+    font-size: 22px;
+  }
+}
+
+@media all and (max-width:600px) {
+  section#nosotrosIntroSection p {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+/* EQUIPO SECTION */
+
+section#nosotrosEquipoSection {
+  padding-bottom: 110px;
+
+  background-image: url("../media/nosotros/sonrisaFriendlyGris.svg");
+  background-size: auto 130%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+@media all and (max-width: 600px) {
+  section#nosotrosEquipoSection {
+    padding-bottom: 60px;
+    background-size: auto 104%;
+    background-position: bottom;
+  }
+}
+
+section#nosotrosEquipoSection article {
+  margin-top: 150px;
+}
+
+@media all and (max-width: 600px) {
+  section#nosotrosEquipoSection article {
+    margin-top: 60px;
+    padding: 0px 20px;
+  }
+}
+
+section#nosotrosEquipoSection img {
+  display: block;
+  margin: 0px auto;
+  width: 450px;
+}
+
+@media all and (max-width: 600px) {
+  section#nosotrosEquipoSection img {
+    width: 70%;
+  }
+}
+
+section#nosotrosEquipoSection p {
+  margin: 0px auto;
+  margin-top: 40px;
+  font-family: "VentiCF", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+
+  width: 640px;
+}
+
+@media all and (max-width: 600px) {
+  section#nosotrosEquipoSection p {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+/* FUNDADORA SECTION */
+
+section#nosotrosFundadoraSection article {
+  margin: 0px auto;
+
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 60px;
+}
+
+@media all and (max-width: 600px) {
+  section#nosotrosFundadoraSection article {
+    flex-direction: column-reverse;
+    gap: 0px;
+    margin-top: 30px;
+  }
+}
+
+section#nosotrosFundadoraSection div {
+  position: relative;
+}
+
+section#nosotrosFundadoraSection img {
+  width: 250px;
+}
+
+section#nosotrosFundadoraSection article h1 {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: calc(100% + 10px);
+
+  font-family: "DM Serif Display Italic", serif;
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media all and (max-width: 600px) {
+  section#nosotrosFundadoraSection article h1 {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+  }
+}
+
+section#nosotrosFundadoraSection div:nth-of-type(2):before {
+  content: "";
+  background: url("../media/nosotros/comillas.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin: 0px auto;
+
+  margin-bottom: 20px;
+}
+
+section#nosotrosFundadoraSection div:nth-of-type(2):after {
+  content: "";
+  background: url("../media/nosotros/comillas.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  display: block;
+  margin: 0px auto;
+
+  margin-top: 20px;
+  transform: rotateY(180deg);
+}
+
+@media all and (max-width: 600px) {
+  section#nosotrosFundadoraSection div:nth-of-type(2):after {
+    margin-bottom: 30px;
+  }
+}
+
+section#nosotrosFundadoraSection p {
+  font-family: "VentiCF", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+
+  width: 320px;
+}
+
+/* RESPALDO SECTION */
+section#nosotrosRespaldoSection article {
+  padding: 0px 20px;
+}
+
+section#nosotrosRespaldoSection ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+@media all and (max-width: 600px) {
+  section#nosotrosRespaldoSection ul {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+section#nosotrosRespaldoSection img {
+  height: 160px;
+}
+
+@media all and (max-width: 600px) {
+  section#nosotrosRespaldoSection img {
+    height: auto;
+    width: 100%;
+  }
+}
