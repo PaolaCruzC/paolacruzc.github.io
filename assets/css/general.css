@@ -168,8 +168,12 @@ nav#generalNav ul {
     bottom: 1px;
     height: 1px;
 
-    background: white;
+    background: grey;
     opacity: 0.5;
+  }
+
+  body.light nav#generalNav ul.visible:after {
+    background: white;
   }
 }
 

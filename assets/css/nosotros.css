@@ -244,17 +244,16 @@ section#nosotrosRespaldoSection ul {
 @media all and (max-width: 600px) {
   section#nosotrosRespaldoSection ul {
     flex-direction: column;
-    gap: 30px;
+    gap: 60px;
   }
 }
 
 section#nosotrosRespaldoSection img {
-  height: 160px;
+  height: 130px;
 }
 
 @media all and (max-width: 600px) {
   section#nosotrosRespaldoSection img {
-    height: auto;
-    width: 100%;
+    height: 110px;
   }
 }
