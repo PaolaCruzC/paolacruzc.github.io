@@ -1,0 +1,110 @@
+/* CONTACTO SECTION */
+section#contactoSection {
+  padding: 0px 20px;
+  position: relative;
+}
+
+section#contactoSection.sent article:nth-of-type(1){
+  opacity: 0;
+}
+
+section#contactoSection.sent article:nth-of-type(2){
+  opacity: 1;
+}
+
+section#contactoSection header {
+  margin-top: 40px;
+}
+
+section#contactoSection article {
+  margin: 0px auto;
+  width: 640px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media all and (max-width: 600px) {
+  section#contactoSection article {
+    width: 100%;
+  }
+}
+
+section#contactoSection input {
+  border: 2px solid #FFC400;
+  border-radius: 8px;
+  padding: 8px;
+
+  font-family: "VentiCF", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+}
+
+section#contactoSection input[name=mensaje] {
+  min-height: 200px;
+}
+
+section#contactoSection input::placeholder {
+  top: 0px;
+}
+
+section#contactoSection a {
+  margin: 0px auto;
+  width: max-content;
+
+  padding-top: 16px;
+  padding-bottom: 12px;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  margin-bottom: 10px;
+
+  background: #00BCC2;
+  color: white;
+  font-family: "Rimouski Bold", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+section#contactoSection a:hover {
+  background: #0CA4A9;
+}
+
+section#contactoSection a.disabled {
+  pointer-events: none;
+  background: #C0C6C6;
+  color: #96A0A1;
+}
+
+section#contactoSection article:nth-of-type(2) {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: -1;
+}
+
+section#contactoSection article:nth-of-type(2) h2 {
+  font-family: "DM Serif Display Italic", serif;
+  font-style: italic;
+  font-size: 50px;
+
+  text-align: center;
+}
+
+@media all and (max-width: 600px) {
+  section#contactoSection article:nth-of-type(2) h2 {
+    font-size: 30px;
+  }
+}
