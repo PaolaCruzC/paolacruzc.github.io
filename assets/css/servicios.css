@@ -1,0 +1,99 @@
+/* SERVICIOS SECTION */
+
+section#serviciosSection header#serviciosHeader {
+  margin-top: 40px;
+  padding: 0px 40px;
+}
+
+@media all and (max-width:600px) {
+  section#serviciosSection header#serviciosHeader {
+    padding: 0px 20px;
+  }
+}
+
+section#serviciosSection header#serviciosHeader p{
+  margin: 0px auto;
+  font-family: "VentiCF", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 140%;
+  text-align: center;
+
+  width: 640px;
+  margin-top: 30px;
+}
+
+@media all and (max-width:1024px) {
+  section#serviciosSection header#serviciosHeader p {
+    font-size: 22px;
+  }
+}
+
+@media all and (max-width:600px) {
+  section#serviciosSection header#serviciosHeader p {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+
+/* INSUMOS SECTION */
+
+section#serviciosInsumosSection {
+  padding-bottom: 110px;
+
+  background-image: url("../media/general/sonrisaFriendly.svg");
+  background-size: auto 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+@media all and (max-width: 600px) {
+  section#serviciosInsumosSection {
+    padding-bottom: 60px;
+    background-size: auto 104%;
+    background-position: bottom;
+  }
+}
+
+section#serviciosInsumosSection article {
+  margin-top: 80px;
+}
+
+@media all and (max-width: 600px) {
+  section#serviciosInsumosSection article {
+    margin-top: 60px;
+    padding: 0px 20px;
+  }
+}
+
+section#serviciosInsumosSection img {
+  display: block;
+  margin: 0px auto;
+  width: 450px;
+}
+
+@media all and (max-width: 600px) {
+  section#serviciosInsumosSection img {
+    width: 70%;
+  }
+}
+
+section#serviciosInsumosSection p {
+  margin: 0px auto;
+  margin-top: 40px;
+  font-family: "VentiCF", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+
+  width: 640px;
+  margin-bottom: 40px;
+}
+
+@media all and (max-width: 600px) {
+  section#serviciosInsumosSection p {
+    font-size: 20px;
+    width: 100%;
+  }
+}

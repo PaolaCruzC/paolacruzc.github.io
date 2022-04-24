@@ -1,40 +1,41 @@
-/* NOSOTROS HEADER */
+/* INTRO SECTION */
 
-header#nosotrosHeader {
+section#nosotrosIntroSection {
+  margin-top: 40px;
+  padding: 0px 20px;
+}
+
+section#nosotrosIntroSection header#nosotrosHeader {
   padding: 0px 40px;
   margin-bottom: 50px;
 }
 
 @media all and (max-width:600px) {
-  header#nosotrosHeader {
+  section#nosotrosIntroSection header#nosotrosHeader {
     padding: 0px 20px;
     margin-bottom: 30px;
     margin-top: 30px;
   }
 }
 
-header#nosotrosHeader img{
+section#nosotrosIntroSection header#nosotrosHeader img{
   max-width: 100%;
   display: block;
   margin: 0px auto;
   width: 480px;
+  margin-top: 30px;
   margin-bottom: 40px;
 }
 
 @media all and (max-width:600px) {
-  header#nosotrosHeader img {
+  section#nosotrosIntroSection header#nosotrosHeader img {
     width: auto;
+    margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 
-/* INTRO SECTION */
-
-section#nosotrosIntroSection {
-  padding: 0px 20px;
-}
-
-section#nosotrosIntroSection img {
+section#nosotrosIntroSection article img {
   max-width: 100%;
   display: block;
   margin: 0px auto;
@@ -44,7 +45,7 @@ section#nosotrosIntroSection img {
 }
 
 @media all and (max-width:600px) {
-  section#nosotrosIntroSection img {
+  section#nosotrosIntroSection article img {
     width: auto;
     margin-bottom: 30px;
   }
