@@ -467,6 +467,7 @@ footer#generalFooter > section {
   align-items: center;
 
   position: relative;
+  gap: 30px;
 }
 
 footer#generalFooter nav#generalFooterNav li a{
@@ -519,6 +520,12 @@ footer#generalFooter aside#generalFooterContactAside {
   gap: 30px;
 
   width: 200px;
+}
+
+@media all and (max-width: 1024px) {
+  footer#generalFooter aside#generalFooterContactAside {
+    width: auto;
+  }
 }
 
 footer#generalFooter div#generalFooterTelefonoDiv a{
