@@ -451,6 +451,7 @@ section#reviewsHomeSection li header img{
 
   border-radius: 50%;
   background: #888888;
+  object-fit: cover;
 }
 
 section#reviewsHomeSection li p {
